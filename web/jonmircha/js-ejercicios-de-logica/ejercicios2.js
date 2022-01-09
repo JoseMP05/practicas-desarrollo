@@ -33,7 +33,7 @@ contarPalabra("hola mundo, adios mundo", "mundo");
 //NUMERO 7
 const comprobarPalindromo = palabra => {
     if(palabra === undefined) return console.error("Falta la palabra como parámetro");
-    if(palabra === "" || palabra === " ") return console.error("")
+    if(palabra === "" || palabra === " ") return console.error("se ha pasado un texto vacio o en blanco")
     let palabraReversa = palabra.toLowerCase().split("");
     palabraReversa = palabraReversa.reverse();
     const palabraArreglo = palabra.toLowerCase().split("");
