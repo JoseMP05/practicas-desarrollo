@@ -24,7 +24,7 @@ const recortarCadena = (string = "", number) => {
         if(string === "") throw "La cadena esta vacia";
         else{
             string = string.toString();
-            let cadenaRec = string.slice(0, number);
+            let cadenaRec = string.slice(0, number); //El método slice() extrae una sección de una cadena y devuelve una cadena nueva.
             return cadenaRec;
         }
     } catch (err){
@@ -40,7 +40,7 @@ function stringEnArray (cadena = undefined, caracter = undefined){
     let cadenaFinal = [];
     if(cadena === undefined || caracter === undefined)console.warn("Uno de los parametros no ha sido rellenado");
     else if (cadena === "" || cadena === " ")console.warn("tu cadena no contiene nada (esto puede incluir espacios en blanco");
-    else cadenaFinal = cadena.split(caracter);
+    else cadenaFinal = cadena.split(caracter); //split sepera una cadena según un caracter que se le pase como argumento y devuelve un array con los demas caracteres como items por separadp
     return cadenaFinal
 }
 console.log(stringEnArray("hola soy yo", " "));
