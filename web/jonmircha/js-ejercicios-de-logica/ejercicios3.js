@@ -11,20 +11,27 @@ const comprobarCapacua = numero => {
     if(numero === undefined) return console.error("no se ha ingresado el parametro");
     if(numero === "" || numero === " ") return console.error("se ha pasado un parametro vacio o en blanco")
     if(isNaN(numero)) return console.error("el parametro pasado no es un número")//la funcion isNaN comprueba si el parametro pasado es un número o no
-    numeroReverse = numero.split("").reverse().join("");
+
+    numeroReverse = numero.toString().split("").reverse().join("");//transformamos el parametro a un string, para porderlo separar con split y dejarlo como arreglo, lo invertimos con reverse y lo volvemos a unir con join
     let isCapacua = false;
     if(numeroReverse == numero) isCapacua = true;
     return console.log(`¿"${numero}" es un capacúa?: ${isCapacua}`)
     
 }
-comprobarCapacua("2002");
+comprobarCapacua("212.212");
 
 //NUMERO 11
 const calcularFactorial = numero => {
+    if(numero === undefined) return console.error("no se ha ingresado el parametro");
+    if(numero === "" || numero === " ") return console.error("se ha pasado un parametro vacio o en blanco");
+    if(isNaN(numero)) return console.error("el parametro pasado no es un número");
+    if(numero == 0) return console.error("no se le puede sacar factorial a 0");
+    if(numero < 0) return console.error("no se puede hayar el factorial de un número negativo");
+
     numerofactorial = parseInt(numero);
     for(let i = 1; i < numero; i++) {
     numerofactorial *= i;
     }
     return console.log(numerofactorial);
 }
-calcularFactorial("5");
+calcularFactorial(5);
