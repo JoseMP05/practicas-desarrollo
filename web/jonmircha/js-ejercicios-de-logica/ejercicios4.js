@@ -34,7 +34,7 @@ parImpar(-2);
 const convertirGrados = (numero, grados = "C") => {
     if(numero === undefined) return console.error("no se ha ingresado el parametro");
     if(numero === "" || numero === " ") return console.error("se ha pasado el parámetro 'número' vacio o en blanco")
-    if(numero === "" || numero === " ") return console.error("se ha pasado el parámetro 'grados' vacio o en blanco")
+    if(grados === "" || grados === " ") return console.error("se ha pasado el parámetro 'grados' vacio o en blanco")
     if(isNaN(numero)) return console.error("el parametro pasado no es un número")
     grados = grados.toUpperCase()
     if(grados != "C" && grados != "F") return console.error("solo se puede convertir de Celsius a Fahrenheit y viceversa. Digita C o F")
