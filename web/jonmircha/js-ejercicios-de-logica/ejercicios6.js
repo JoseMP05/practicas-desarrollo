@@ -57,8 +57,11 @@ const validarEmail = email => {
     if(email === "" || email === " ") return console.error("se ha pasado un email vacia o en blanco");
     if(typeof cadena !== "string") return console.log(`No estas ingresando una cadena`);
 
-    let expresion = /^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/;
+    let expresion = /^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/; //tomado de https://medium.com/@jgratereaux/validar-correos-electr%C3%B3nicos-con-expresiones-regulares-7914751b6018
     let validar = expresion.test(email);
     (validar)? console.log(`el ${email} es un email valido`): console.log(`el ${email} no es un email valido`)
 }
 validarEmail("jjosemii64@gmail.com");
+
+//otra regex valida para validar un correo
+// /[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})/i
