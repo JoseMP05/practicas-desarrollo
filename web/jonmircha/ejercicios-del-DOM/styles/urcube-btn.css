@@ -1,0 +1,12 @@
+.urcube-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    position: sticky;
+    bottom: 0;
+    height: auto;
+    width: auto;
+    border: none;
+    background-color: transparent;
+}
