@@ -28,12 +28,6 @@
 
   .section{
     height: 100vh;
-    background-color: aqua;
-}
-
-.section__title{
     text-align: center;
-    font-size: 1.2rem;
-    background-color: red;
-    margin: 0%;
-  }
+    /* background-color: aqua; */
+}
