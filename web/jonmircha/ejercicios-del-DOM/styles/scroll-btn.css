@@ -1,0 +1,23 @@
+@import url(general.css);
+
+.scroll-btn{
+    width: 55px;
+    height: 55px;
+    background-color: yellow;
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    font-size: 2rem;
+    border: none;
+    text-align: center;
+    line-height: 2rem;
+    color: var(--text-color);
+    box-shadow: 3px 3px 5px #c2c2c24b, -3px -3px 5px #c2c2c257;
+    cursor: pointer;
+}
+
+.scroll-btn--desable{
+    opacity: 0;
+    visibility: hidden;
+}
