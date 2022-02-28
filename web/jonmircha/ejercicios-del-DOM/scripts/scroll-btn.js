@@ -7,7 +7,7 @@ export default function scrollButton (btn){
             }
             else{
                 scrollbtn.classList.add("scroll-btn--desable")
-            }
+            }   
         })
         document.addEventListener("click", (event) =>{
             if(event.target.matches(".scroll-btn")) {

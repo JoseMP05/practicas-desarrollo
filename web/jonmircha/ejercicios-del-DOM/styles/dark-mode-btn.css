@@ -1,0 +1,38 @@
+@import url(general.css);
+
+.dark-btn{
+    position: absolute;
+    top: calc (50% - 12px);
+    right: 10%;
+    width: 70px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #464646;
+    border-radius: 12px;
+    border: none;
+    color: var(--text-color);
+    box-shadow: 3px 3px 5px #c2c2c24b, -3px -3px 5px #c2c2c257;
+    cursor: pointer;
+    padding: 0 2px;
+}
+
+.dark-btn__sun,
+.dark-btn__moon{
+    padding: 2px 2px 0;
+    border-radius: 50%;
+    transition: background-color 0.5s;
+}
+
+.dark-btn__moon--modifier{
+}
+
+.dark-btn--active path{    
+    fill: rgb(255, 255, 255);
+}
+
+.dark-btn--desable path{
+    fill: yellow;
+    transition: background-color 0.5s;
+}
