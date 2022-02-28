@@ -15,11 +15,11 @@ export default function darkMode (btn, classDark){
     
     document.addEventListener("click", (event)=>{
         if(event.target.matches(btn) || event.target.matches(`${btn} *`) ){
-            if(themeBtn.firstElementChild === btnMoon){
+            if(themeBtn.firstElementChild === btnSun){
                 selector.forEach(element=>{ element.classList.add(classDark)})
                 togglerBtns();
             }
-            else if(themeBtn.firstElementChild === btnSun){
+            else if(themeBtn.firstElementChild === btnMoon){
                 selector.forEach(element=>{ element.classList.remove(classDark)})
                 togglerBtns();
             }
