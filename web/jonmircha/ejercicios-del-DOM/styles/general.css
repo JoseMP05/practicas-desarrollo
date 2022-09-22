@@ -47,7 +47,9 @@
   .section{
     height: 100vh;
     text-align: center;
-    /* background-color: aqua; */
+    background-image: url("../../../SVG/background.svg");
+    background-size: cover;
+
 }
 
 .dark-mode{
